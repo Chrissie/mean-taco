@@ -21,15 +21,11 @@ Open terminal
 
 Download en installeer Docker desktop (Windows)
 
-Docker settings -> Shared drive aanvinken
-
 Elevated PowerShell openen (admin rechten)
 
 > docker pull mongo
 
-> mkdir ~/mongodata/data/db
-
-> docker run -d --name docker-mongo -p 29017:27017 -v ~/mongodata/data/db mongo
+> docker run -d --name docker-mongo -p 29017:27017 mongo
 
 > docker exec -it docker-mongo mongo
 
