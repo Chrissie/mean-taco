@@ -21,13 +21,11 @@ Open terminal
 
 Download en installeer Docker desktop (Windows)
 
-Elevated PowerShell openen (admin rechten)
+Open terminal
 
 > docker pull mongo
 
 > docker run -d --name docker-mongo -p 29017:27017 mongo
-
-> docker exec -it docker-mongo mongo
 
 Download & installeer MongoDB Compass (visualisatietool)
 https://www.mongodb.com/download-center/compass
