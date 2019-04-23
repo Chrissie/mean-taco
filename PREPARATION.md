@@ -17,21 +17,19 @@ Open terminal
 2. Vink tijdens de installatie het 'installeer MongoDB Compass' aan.
 3. Done.
 
-### Optie 2: MongoDB in Docker installatie (Prepare to get problems)
+### Optie 2: MongoDB in Docker container (Advanced)
 
 Download en installeer Docker desktop (Windows)
 
-Docker settings -> Shared drive aanvinken
-
-Elevated PowerShell openen (admin rechten)
+Open terminal
 
 > docker pull mongo
 
-> mkdir ~/mongodata/data/db
-
-> docker run -d --name docker-mongo -p 29017:27017 -v ~/mongodata/data/db mongo
-
-> docker exec -it docker-mongo mongo
+> docker run -d --name docker-mongo -p 29017:27017 mongo
 
 Download & installeer MongoDB Compass (visualisatietool)
 https://www.mongodb.com/download-center/compass
+
+### Optie 3: Docker Compose (Advanced)
+
+Credits aan André Geuze. Docker compose file [hier](https://github.com/Chrissie/mean-taco/blob/master/docker-compose.yml)
