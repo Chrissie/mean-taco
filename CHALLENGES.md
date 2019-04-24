@@ -7,16 +7,15 @@ Hint: Gebruik [mongorestore](https://docs.mongodb.com/manual/reference/program/m
 Start de backend en frontend op, open de webpagina in je browser (port 4200).  
 Hint: Check of je goed voorbereid bent, en doe npm install in de server én frontend.
 
-Gaaf! We zien de frontend opgebouwd uit mongodb data.
-Pas wat data in mongodb aan en refresh de pagina om te checken.
+Gaaf! We zien de frontend opgebouwd uit MongoDB data.
+Pas wat data in MongoDB aan en refresh de pagina om te checken.
 
 ### Opdracht 3 
-Maak een detailpagina voor teamleden waarop de naam, functie en quote van de teamleden zichtbaar zijn.  
-Hint: Hiervoor zijn geen wijzigingen aan de backend/database nodig.  
+Maak een detailpagina voor teamleden waarop de naam, functie en quote van de teamleden zichtbaar zijn. Maak een backend route voor het ophalen van een teamlid op ID.  
+Hint: Kijk naar de navigatie op andere plaatsen in de applicatie.  
   
 Maak een detail component aan met het commando
 `ng generate component member-detail`.  
-Bestudeer de bestaande applicatie of lees je in op Angular routing en navigation om de detailpagina te linken met de bestaande app.
 
 
 ## Challenges
