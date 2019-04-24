@@ -81,3 +81,14 @@ Deze challenge is leuk om te doen als
 
 **Opdracht:** Onderzoek [Angular Internationalization](https://angular.io/guide/i18n#internationalization-i18n) en toon de bestaande app in verschillende talen. Kan dit automatisch op de systeemtaal of browsertaal? Of is hier input van de gebruiker voor nodig?
 
+
+### Challenge 5: Monitoring MEAN-stack apps
+**Type challenge:** Azure Application Insights koppelen met je MEAN-stack applicatie. Bij deze challenge ga je in de front- en back-end aan de slag om allerlei events naar AppInsights te schrijven.
+
+Deze challenge is erg nuttig als:
+- je wil weten hoe je jouw applicatie na deployment in leven houdt
+- je wil weten hoe je meer controle krijgt over het loggen van specifieke application events, naar een centrale log locatie
+- je een Azure subscription hebt, maar Application Insights nog niet kent of niet gebruikt
+- je wel graag een Developer Anno 2019 wil zijn/blijven ;)
+
+**Opdracht:** Onderzoek hoe je in de [front-end de koppeling kunt maken](https://docs.microsoft.com/en-us/azure/azure-monitor/learn/nodejs-quick-start), maar ook hoe je het zelfde kunt bereiken in de back-end. Probeer eigen 'events' te loggen naar Application Insights. Extra gaaf als je daarbij categorieën als Front-end en Back-end kan registreren!
