@@ -32,4 +32,4 @@ https://www.mongodb.com/download-center/compass
 
 ### Optie 3: Docker Compose (Advanced)
 
-Credits aan André Geuze. Docker compose file [hier](https://github.com/Chrissie/mean-taco/blob/master/docker-compose.yml)
+Credits aan André Geuze. Docker compose file [hier](docker-compose.yml)
