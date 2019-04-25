@@ -14,7 +14,6 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <!-- Add Content Here -->
     <mat-toolbar color="primary">
       <button
         type="button"
@@ -25,6 +24,14 @@
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       Teams
+      <button
+        type="button"
+        style="margin-left: 100px"
+        mat-icon-button
+        (click)="loginService.logout()"
+        >Log uit
+        <mat-icon>power_settings_new</mat-icon>
+      </button>
     </mat-toolbar>
     <router-outlet></router-outlet>      
   </mat-sidenav-content>

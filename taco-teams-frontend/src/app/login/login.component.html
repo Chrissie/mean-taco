@@ -1,0 +1,12 @@
+<div class="loginCard">
+  <mat-form-field >
+    <input matInput placeholder="Email" [(ngModel)]="username">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" [(ngModel)]="password">
+    <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+  </mat-form-field>
+
+  <button mat-button color=primary (click)='login()'>Log me in!</button>
+</div>

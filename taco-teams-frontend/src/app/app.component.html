@@ -1,1 +1,6 @@
-<app-company-navigation></app-company-navigation>
+<div *ngIf="loginService.IsLoggedIn()">
+    <app-company-navigation></app-company-navigation>
+</div>
+<div *ngIf="!loginService.IsLoggedIn()">
+    <app-login></app-login>
+</div>

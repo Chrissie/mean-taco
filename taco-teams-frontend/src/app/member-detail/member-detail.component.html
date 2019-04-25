@@ -1,0 +1,18 @@
+<div *ngIf="member$ | async as member">
+  <mat-list>
+    <mat-list-item>
+      <p matLine>Naam</p>
+      <h3 matLine> {{ member.name }} </h3>
+    </mat-list-item>
+
+    <mat-list-item>
+      <p matLine>Functie</p>
+      <h3 matLine> {{ member.function }} </h3>
+    </mat-list-item>
+
+    <mat-list-item>
+      <p matLine>Quote</p>
+      <h3 matLine> {{ member.quote }} </h3>
+    </mat-list-item>
+  </mat-list>
+</div>

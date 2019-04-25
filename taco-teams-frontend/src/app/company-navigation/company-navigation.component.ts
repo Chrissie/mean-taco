@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { CompanyService } from '../company.service';
 import { CompanyModel } from '../datamodels';
+import { LoginService } from '../login.service';
 
 @Component({
   selector: 'app-company-navigation',
@@ -19,7 +20,7 @@ export class CompanyNavigationComponent implements OnInit {
       map(result => result.matches)
     );
 
-  constructor(private breakpointObserver: BreakpointObserver, private companyService: CompanyService) {}
+  constructor(private breakpointObserver: BreakpointObserver, private companyService: CompanyService, private loginService: LoginService) {}
 
   ngOnInit() {
     this.companyService.getCompanys().subscribe(companies => {

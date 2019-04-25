@@ -3,7 +3,9 @@ var mongoose = require('mongoose');
 var teamMemberSchema = new mongoose.Schema({
     name: String,
     function: String,
-    quote: String
+    quote: String,
+    email: String,
+    password: { type: String, select: false }
 });
 var TeamMemberModel = mongoose.model('teamMember', teamMemberSchema, 'members');
 

@@ -8,7 +8,9 @@
           </mat-card-header>
           <mat-card-content class="dashboard-card-content">
               <mat-list>
-                <mat-list-item *ngFor="let teamMember of team.teamMembers">{{teamMember.name}}</mat-list-item>
+                <mat-list-item *ngFor="let teamMember of team.teamMembers"
+                [routerLink]="['/member', teamMember._id]" routerLinkActive="active"
+                >{{teamMember.name}}</mat-list-item>
               </mat-list>
           </mat-card-content>
         </mat-card>

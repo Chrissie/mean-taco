@@ -6,16 +6,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CompanyNavigationComponent } from './company-navigation/company-navigation.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule,
-  MatListModule, MatGridListModule, MatCardModule, MatMenuModule, MatTabsModule } from '@angular/material';
-import { HttpClientModule } from '@angular/common/http';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule,
+  MatGridListModule, MatCardModule, MatMenuModule, MatTabsModule, MatFormFieldModule,
+  MatInputModule } from '@angular/material';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { CompanyViewComponent } from './company-view/company-view.component';
+import { MemberDetailComponent } from './member-detail/member-detail.component';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
+import { AuthGuardService } from './auth-guard.service';
+import { HeaderInterceptor } from './http-interceptor';
 
 @NgModule({
   declarations: [
     AppComponent,
     CompanyNavigationComponent,
     CompanyViewComponent,
+    MemberDetailComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,9 +39,13 @@ import { CompanyViewComponent } from './company-view/company-view.component';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
-    MatTabsModule
+    MatTabsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [AuthGuardService, { provide: HTTP_INTERCEPTORS, useClass: HeaderInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
