@@ -57,10 +57,10 @@ Deze challenge is leuk om te doen als
 **Opdracht:** Maak het mogelijk om vanuit de Angular app teams en personen toe te voegen, aan te passen en te verwijderen.
 Door dit te doen leer je precies hoe een MEAN-stack applicatie in elkaar zit, wat Angular Components en Services zijn, hoe Express routing werkt en hoe je data in MongoDB ophaalt en opslaat.
 
-Helemaal klaar? Challenge 3 of 5 zijn nu een eitje, als je nog tijd hebt.
+Helemaal klaar? Challenge 3 is nu een eitje, als je nog tijd hebt.
 
 
-### Challenge 3: Drag en drop!
+### Challenge 3: Materialize
 
 **Type challenge:** Creatief en visueel, dichtbij een eindgebruiker. Veel frontend en minimum backend code.  
 Deze challenge is leuk om te doen als
@@ -69,6 +69,8 @@ Deze challenge is leuk om te doen als
 
 **Opdracht:** Verzin een manier om [Angular Material Drag & Drop](https://material.angular.io/cdk/drag-drop/overview) toe te passen in de webapp. Synchroniseer het resultaat van de verplaatsing met de backend. 
 Voorbeeld: Een teammember wisselen van team door deze te verslepen.
+
+**Opdracht 2:** Maak een switch button op de toolbar die de hele app laat switchen tussen een dark theme en een light theme. Angular Material [maakt dit makkelijk voor je](https://material.angular.io/guide/theming).
   
 Klaar? Probeer challenge 2 of 5 eens.
 
